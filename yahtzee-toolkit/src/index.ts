@@ -3,3 +3,4 @@ export * from "./models";
 export * from "./state";
 export * from "./utils/language.utils";
 export * from "./utils/score.utils";
+export * from "./utils/score-board.utils";

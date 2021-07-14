@@ -1,13 +1,7 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement } from 'lit/decorators.js';
 import { connect } from 'pwa-helpers/connect-mixin';
-import {
-  AppState,
-  DEFAULT_LANG,
-  GameStatus,
-  store,
-  SupportedLanguages,
-} from 'yahtzee-toolkit';
+import { AppState, GameStatus, store } from 'yahtzee-toolkit';
 
 @customElement('yahtee-app')
 export class App extends connect(store)(LitElement) {
@@ -32,28 +26,11 @@ export class App extends connect(store)(LitElement) {
     }
   `;
 
-  /**
-   * The name to say "Hello" to.
-   */
-  @property()
-  name = 'World';
-
-  /**
-   * The number of times the button has been clicked.
-   */
-  @property({ type: Number })
-  count = 0;
-
   gameStatus: GameStatus = 'NO_GAME';
-  currentLang: SupportedLanguages = DEFAULT_LANG;
 
   stateChanged(state: AppState) {
     this.gameStatus = state.gameStatus;
     this.requestUpdate('gameStatus');
-    if (this.currentLang !== state.currentLang) {
-      this.currentLang = state.currentLang;
-      this.requestUpdate();
-    }
   }
 
   render() {

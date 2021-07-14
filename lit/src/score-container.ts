@@ -4,6 +4,7 @@ import { connect } from 'pwa-helpers/connect-mixin';
 import {
   actions,
   AppState,
+  makeScoreBoard,
   ScoreBoard,
   ScoreKey,
   store,
@@ -11,7 +12,6 @@ import {
   INFERIOR_SCORE_KEYS,
   I18nKey,
 } from 'yahtzee-toolkit';
-import { makeScoreBoard } from 'yahtzee-toolkit/src/utils/score-board.utils';
 import { SelectedEvent } from './score-card';
 
 @customElement('yahtzee-score-container')
