@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+.score-container {
+  display: flex;
+  flex-direction: row;
+}
+fieldset {
+  flex: 1 1 50%;
+  border: none;
+}

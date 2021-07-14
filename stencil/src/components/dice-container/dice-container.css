@@ -1,0 +1,33 @@
+:host {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.dice-container {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  width: fit-content;
+}
+.roll-button {
+  margin-left: 6px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  padding: 0px 16px 0px 8px;
+  border-radius: 5px;
+  cursor: initial;
+}
+.btn:not([disabled]):hover {
+  background-color: rgba(189, 189, 189, 0.25);
+  cursor: pointer;
+}
+.btn .icon {
+  font-size: 200%;
+  margin-right: 4px;
+}

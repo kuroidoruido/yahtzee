@@ -15,6 +15,7 @@ The Yahtzee Toolkit is a basic headless yahtzee implementation built with Redux 
 ## Current implementations
 
 - Lit + Redux (with Yahtzee Toolkit)
+- Stencil + Redux (with Yahtzee Toolkit)
 
 ## Exprected App
 

@@ -1,0 +1,9 @@
+{
+  "name": "Anthony's Yahtzee - Stencil",
+  "short_name": "Stencil",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [],
+  "background_color": "#16161d",
+  "theme_color": "#16161d"
+}

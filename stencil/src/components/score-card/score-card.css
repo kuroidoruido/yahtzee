@@ -1,0 +1,36 @@
+:host {
+  display: block;
+}
+fieldset {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+fieldset.selectable {
+  cursor: pointer;
+}
+fieldset.selectable:hover {
+  border-color: rgba(117, 117, 117);
+}
+.value {
+  font-size: 1.5rem;
+}
+.dice-value {
+  font-size: 1.5rem;
+}
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+button.hidden {
+  visibility: hidden;
+}
+button .icon {
+  font-size: 200%;
+  padding: 0 1rem;
+}
