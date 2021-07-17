@@ -3,7 +3,7 @@ import { customElement } from 'lit/decorators.js';
 import { connect } from 'pwa-helpers/connect-mixin';
 import { AppState, GameStatus, store } from 'yahtzee-toolkit';
 
-@customElement('yahtee-app')
+@customElement('yahtzee-app')
 export class App extends connect(store)(LitElement) {
   static styles = css`
     :host {
@@ -64,6 +64,6 @@ export class App extends connect(store)(LitElement) {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'yahtee-app': App;
+    'yahtzee-app': App;
   }
 }
